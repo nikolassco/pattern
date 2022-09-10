@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import styles from './Navbar.module.css';
-import { Link as LinkScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -27,13 +27,13 @@ const Navbar = () => {
       </label>
       <ul className={styles.menu_list} id="navmenu">
         <li className={styles.menu_item}>
-          <LinkScroll to="Home" spy={true} smooth={true} offset={-70} duration={500} className={styles.link} onClick={closeMenu} >Home</LinkScroll>
+          <Link to="Home" spy={true} smooth={true} offset={-70} duration={500} className={styles.link} onClick={closeMenu} >Home</Link>
         </li>
         <li className={styles.menu_item}>
-          <LinkScroll to="Projetos" spy={true} smooth={true} offset={-70} duration={500} className={styles.link} onClick={closeMenu}>Projetos</LinkScroll>
+          <Link to="Projetos" spy={true} smooth={true} offset={-70} duration={500} className={styles.link} onClick={closeMenu}>Projetos</Link>
         </li>
         <li className={styles.menu_item}>
-          <LinkScroll to="Sobre" spy={true} smooth={true} offset={-70} duration={500} className={styles.link} onClick={closeMenu}>Sobre Mim</LinkScroll>
+          <Link to="Sobre" spy={true} smooth={true} offset={-70} duration={500} className={styles.link} onClick={closeMenu}>Sobre Mim</Link>
         </li>
       </ul>
 
