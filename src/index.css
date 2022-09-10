@@ -1,13 +1,45 @@
-body {
+/*
+Propriedades de Layout (position, float, clear, display)
+Propriedades do Modelo de Caixa (width, height, margin, padding)
+Propriedades Visuais (color, background, border, box-shadow)
+Propriedades Tipográficas (font-size, font-family, text-align, text-transform)
+Outros Propriedades (cursor, overflow, z-index)
+*/
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 56.25rem) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,
+      #000,
+      #fff);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bbb;
 }
